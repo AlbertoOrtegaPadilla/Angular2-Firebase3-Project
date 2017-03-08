@@ -1,0 +1,33 @@
+<h1>Ofertas</h1>
+<br>
+<div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+        <thead>
+            <tr>
+                <td class="center">CODIGO</td>
+                <td class="center">DESCRIPCION</td>
+                <td class="center">PRECIO</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+    </table>
+    <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <tr *ngFor="let oferta of (ofertas$ | async)">
+                <td class="center">{{oferta.codigo}}</td>
+                <td class="center">{{oferta.descripcion}}</td>
+                <td class="center">{{oferta.precio}}</td>
+                <td>
+                    <button [routerLink]="oferta.$key">Editar</button>
+                </td>
+                <td>
+                    <button (click)="delete(oferta.$key)">Delete</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<br>
+<button class="left" routerLink="new" [queryParams]="{restauranteId:restauranteId }">NUEVA</button>
+<button class="right" routerLink="">volver</button>

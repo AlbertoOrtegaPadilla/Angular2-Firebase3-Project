@@ -1,0 +1,5 @@
+<app-formulario-oferta #form></app-formulario-oferta>
+
+<button class="right" [disabled]="!form.valid" (click)="save(form)">Guardar</button>
+
+<button class="left" [routerLink]="['../']">Volver</button>

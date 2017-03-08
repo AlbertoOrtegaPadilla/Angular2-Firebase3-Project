@@ -1,0 +1,25 @@
+<h1>Ofertas</h1>
+<br>
+<div class="tbl-header">
+    <form [formGroup]="form" autocomplete="off" novalidate>
+
+        <fieldset>
+            <legend>Oferta: Nueva</legend>
+            <div>
+                <label>Codigo:</label>
+                <input name="title" formControlName="codigo">
+                <div *ngIf="isErrorVisible('codigo','required')">field is mandatory</div>
+            </div>
+            <div>
+                <label>Descripcion:</label>
+                <input name="title" formControlName="descripcion">
+                <div *ngIf="isErrorVisible('descripcion','required')">field is mandatory</div>
+            </div>
+            <div>
+                <label>Precio:</label>
+                <input name="title" formControlName="precio">
+                <div *ngIf="isErrorVisible('precio','required')">field is mandatory</div>
+            </div>
+        </fieldset>
+    </form>
+</div>

@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+h1 {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tbl-header {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tbl-content {
+    height: 300px;
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background: -webkit-linear-gradient(left, #0D4D4D, #25b7c4);
+    background: linear-gradient(to right, #0D4D4D, #25b7c4);
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    margin: 50px;
+}
+
+button {
+    margin: 0 auto;
+    font-size: 1.0rem;
+    padding: 1.25rem 2.5rem;
+    display: block;
+    background-color: #5d696c;
+    border: 1px solid transparent;
+    color: #ffffff;
+    font-weight: 300;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 200px;
+    height: 80px;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #009ac9;
+    border-color: #009ac9;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.buscador {
+    position: absolute;
+    left: 1%;
+    top: 3%;
+}
+
+.titulo {
+    margin-top: 50px;
+}
+
+.center {
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+input {
+    display: block;
+    margin: 10px;
+    width: 98%;
+    font-size: 18px;
+    box-shadow: none;
+    border-radius: none;
+    padding: 5px;
+    border: solid 3px #c9c9c9;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border: solid 3px #000;
+}

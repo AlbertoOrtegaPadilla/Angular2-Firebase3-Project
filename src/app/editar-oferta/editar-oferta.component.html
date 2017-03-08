@@ -1,0 +1,23 @@
+<h1>Ofertas</h1>
+<br>
+<div class="tbl-header">
+    <fieldset>
+        <legend>Oferta: Modificar</legend>
+        <div>
+            <label>Codigo:</label>
+            <input name="title" [(ngModel)]="codigo" #c>
+        </div>
+        <div>
+            <label>Descripcion:</label>
+            <input name="title" [(ngModel)]="descripcion" #d>
+        </div>
+        <div>
+            <label>Precio:</label>
+            <input name="title" [(ngModel)]="precio" #p>
+        </div>
+    </fieldset>
+</div>
+
+<button class="right" (click)="modificarOferta(id, c.value, d.value, p.value)" [routerLink]="['../']">Guardar</button>
+
+<button class="left" [routerLink]="['../']">volver</button>
